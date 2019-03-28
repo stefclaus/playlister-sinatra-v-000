@@ -40,7 +40,7 @@ get '/songs' do
     @song.genre_ids = params[:genres]
 
     @song.save
-    flash[:message] = "Successfully edited song."
+    flash[:message] = "Successfully updated song."
     redirect("/songs/#{@song.slug}")
   end
 
